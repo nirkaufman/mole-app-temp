@@ -21,7 +21,6 @@ export class GameService {
     return this._holes;
   }
 
-
   public startGame() {
     setInterval( () => {
       const hole = this.holes[this.getRandom()];
