@@ -3,12 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'ml-root',
   template: `
-  <h1>
-    {{title}}
-  </h1>
+    <ml-game></ml-game>
   `,
   styles: []
 })
 export class AppComponent {
-  title = 'ml works!';
+
 }

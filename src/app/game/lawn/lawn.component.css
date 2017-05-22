@@ -1,0 +1,7 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-around;
+}

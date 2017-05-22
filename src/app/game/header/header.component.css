@@ -1,0 +1,16 @@
+header {
+  float: left;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 5%;
+}
+#hud {
+  display: flex;
+  font-size: 40px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+#hud div {
+  padding: 5%;
+}

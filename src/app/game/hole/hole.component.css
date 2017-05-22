@@ -1,0 +1,23 @@
+
+.hole {
+  width: 120px;
+  height: 150px;
+  background-image: url('/assets/mole.png');
+  background-size: 600px;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 5%;
+  background-position: 0 100%;
+}
+.up {
+  background-position: 25% 100%;
+}
+.hit {
+  background-position: 50% 100%;
+}
+.sad {
+  background-position: 75% 100%;
+}
+.start {
+  background-position: 100% 100%;
+}
