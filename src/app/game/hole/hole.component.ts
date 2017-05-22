@@ -1,17 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
+import {Hole} from "../hole";
 
 @Component({
   selector: 'ml-hole',
   template: `
-    <div class="hole"></div>
+    <div class="hole" [ngClass]="hole.state" ></div>
   `,
   styleUrls: ['./hole.component.css']
 })
-export class HoleComponent implements OnInit {
+export class HoleComponent  {
 
-  constructor() { }
+  @Input()
+  public hole: Hole;
 
-  ngOnInit() {
-  }
+
 
 }

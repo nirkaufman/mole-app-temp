@@ -4,11 +4,13 @@ import {GameComponent} from './game.component';
 import {HoleComponent} from './hole/hole.component';
 import {LawnComponent} from './lawn/lawn.component';
 import {HeaderComponent} from './header/header.component';
+import {GameService} from './game.service';
 
 @NgModule({
   imports     : [
     CommonModule
   ],
+  providers   : [GameService],
   declarations: [GameComponent, HoleComponent, LawnComponent, HeaderComponent],
   exports     : [GameComponent]
 })

@@ -1,20 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Hole} from '../hole';
 
 @Component({
   selector: 'ml-lawn',
   template: `      
-      <ml-hole></ml-hole>
-      <ml-hole></ml-hole>
-      <ml-hole></ml-hole>
-      <ml-hole></ml-hole>
+      <ml-hole *ngFor="let hole of holes" [hole]="hole"></ml-hole>
   `,
   styleUrls: ['./lawn.component.css']
 })
-export class LawnComponent implements OnInit {
+export class LawnComponent  {
 
-  constructor() { }
+  @Input()
+  public holes: Hole[];
 
-  ngOnInit() {
-  }
 
 }

@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import {GameService} from './game.service';
 
 @Component({
   selector: 'ml-game',
   template: `
     <div id="game">
-      <ml-header></ml-header>
-      <ml-lawn></ml-lawn>
+      <ml-header (click)="game.startGame()"></ml-header>
+      <ml-lawn [holes]="game.holes"></ml-lawn>
     </div>
   `,
   styles: [`
@@ -17,11 +18,12 @@ import { Component, OnInit } from '@angular/core';
     }
   `]
 })
-export class GameComponent implements OnInit {
+export class GameComponent {
+  public game: GameService;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(game: GameService) {
+    this.game = game;
   }
+
 
 }
